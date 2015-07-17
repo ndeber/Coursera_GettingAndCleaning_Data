@@ -19,3 +19,13 @@ library(xlsx)
 colIndex <- 7:15
 rowIndex<-18:23
 dat <- read.xlsx("DATA.gov_NGAP.xlsx",sheetIndex=1,header=TRUE,colIndex=colIndex,rowIndex=rowIndex)
+
+
+##Quizz 2
+#Q1
+library(sqldf)
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+download.file(fileUrl,destfile = "Quizz2_data.csv")
+acs <- read.table("Quizz2_data.csv", sep = ",", header = TRUE, na.strings ="NA", quote="")
+sqldf("select pwgtp1 from acs where AGEP < 50")
+
