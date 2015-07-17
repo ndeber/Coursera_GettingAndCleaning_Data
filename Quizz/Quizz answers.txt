@@ -4,3 +4,10 @@ I
 3.b 36534720 
 4.c 127
 5.e sapply(split(DT$pwgtp15,DT$SEX),mean) 
+
+II
+1. 2013-11-07T13:25:07Z
+2. sqldf("select pwgtp1 from acs where AGEP < 50")
+3. sqldf("select distinct AGEP from acs")
+4. 45 31 7 25
+5. 32426.7

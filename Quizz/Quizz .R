@@ -43,3 +43,32 @@ DT[,mean(pwgtp15),by=SEX]
 sapply(split(DT$pwgtp15,DT$SEX),mean) 
 mean(DT$pwgtp15,by=DT$SEX) #No
 
+
+### Quizz 2
+##Q1
+
+
+##Q2
+library(sqldf)
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+download.file(fileUrl,destfile = "Quizz2_data.csv")
+acs <- read.table("Quizz2_data.csv", sep = ",", header = TRUE, na.strings ="NA", quote="")
+sqldf("select pwgtp1 from acs where AGEP < 50")
+
+##Q3
+unique(acs$AGEP)
+sqldf("select distinct AGEP from acs")
+
+##Q4
+fileUrl <- "http://biostat.jhsph.edu/~jleek/contact.html"
+download.file(fileUrl,destfile = "Quizz2_site.html")
+site2 <- read.fwf("Quizz2_site.html",20000)
+table<-data.frame(site2)
+nchar(as.character(table[c(10,20,30,100),]))
+as.character(table[100,])
+
+
+##Q5
+fileUrl <- "http://www.cpc.ncep.noaa.gov/data/indices/wksst8110.for"
+download.file(fileUrl,destfile = "Quizz2_data2.txt")
+table<- read.fwf("Quizz2_data2.txt", widths=c(12,7,4, 9,4, 9,4, 9,4),skip=4)
