@@ -4,22 +4,28 @@ Linked to coursera https://www.coursera.org/course/getdata
 ## Variables list
 1.	 Activity                       	
 	Activity types
-			LAYING
-			SITTING
-			STANDING
-			WALKING
-			WALKING_DOWNSTAIRS
-			WALKING_UPSTAIRS 
+			*LAYING
+			*SITTING
+			*STANDING
+			*WALKING
+			*WALKING_DOWNSTAIRS
+			*WALKING_UPSTAIRS 
 			
 2.	 Subjects                       	
-	# of subject being measured
-			1.30 INTEGER
-3.	 tBodyAcc-mean()-X              	Body acceleration - X component - Mean - Time domain - Variable normalized to -1:1
-4.	 tBodyAcc-mean()-Y              	Body acceleration - Y component - Mean - Time domain - Variable normalized to -1:1
-5.	 tBodyAcc-mean()-Z              	Body acceleration - Z component - Mean - Time domain - Variable normalized to -1:1
-6.	 tBodyAcc-std()-X               	Body acceleration - X component - Standard deviation - Time domain - Variable normalized to -1:1
-7.	 tBodyAcc-std()-Y               	Body acceleration - Y component - Standard deviation - Time domain - Variable normalized to -1:1
-8.	 tBodyAcc-std()-Z               	Body acceleration - Z component - Standard deviation - Time domain - Variable normalized to -1:1
+	Number of subject being measured
+		1:30 INTEGER
+3.	 tBodyAcc-mean()-X              	
+	Body acceleration - X component - Mean - Time domain - Variable normalized to -1:1
+4.	 tBodyAcc-mean()-Y              	
+	Body acceleration - Y component - Mean - Time domain - Variable normalized to -1:1
+5.	 tBodyAcc-mean()-Z              	
+	Body acceleration - Z component - Mean - Time domain - Variable normalized to -1:1
+6.	 tBodyAcc-std()-X               	
+	Body acceleration - X component - Standard deviation - Time domain - Variable normalized to -1:1
+7.	 tBodyAcc-std()-Y               	
+	Body acceleration - Y component - Standard deviation - Time domain - Variable normalized to -1:1
+8.	 tBodyAcc-std()-Z               	
+	Body acceleration - Z component - Standard deviation - Time domain - Variable normalized to -1:1
 9.	 tGravityAcc-mean()-X           	Body acceleration, gravity component - X component - Mean - Time domain - Variable normalized to -1:1
 10.	 tGravityAcc-mean()-Y           	Body acceleration, gravity component - Y component - Mean - Time domain - Variable normalized to -1:1
 11.	 tGravityAcc-mean()-Z           	Body acceleration, gravity component - Z component - Mean - Time domain - Variable normalized to -1:1
@@ -84,13 +90,22 @@ Linked to coursera https://www.coursera.org/course/getdata
 70.	 fBodyAccMag-mean()             	Body acceleration - magnitude - Mean - Frequency domain - Variable normalized to -1:1
 71.	 fBodyAccMag-std()              	Body acceleration - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
 72.	 fBodyAccMag-meanFreq()         	Body acceleration - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
-73.	 fBodyBodyAccJerkMag-mean()     	Body acceleration, jerk component - magnitude - Mean - Frequency domain - Variable normalized to -1:1
-74.	 fBodyBodyAccJerkMag-std()      	Body acceleration, jerk component - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
-75.	 fBodyBodyAccJerkMag-meanFreq() 	Body acceleration, jerk component - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
-76.	 fBodyBodyGyroMag-mean()        	Body rotation - magnitude - Mean - Frequency domain - Variable normalized to -1:1
-77.	 fBodyBodyGyroMag-std()         	Body rotation - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
-78.	 fBodyBodyGyroMag-meanFreq()    	Body rotation - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
-79.	 fBodyBodyGyroJerkMag-mean()    	Body rotation, jerk component - magnitude - Mean - Frequency domain - Variable normalized to -1:1
-80.	 fBodyBodyGyroJerkMag-std()     	Body rotation, jerk component - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
-81.	 fBodyBodyGyroJerkMag-meanFreq()	Body rotation, jerk component - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
+73.	 fBodyBodyAccJerkMag-mean()     	
+	Body acceleration, jerk component - magnitude - Mean - Frequency domain - Variable normalized to -1:1
+74.	 fBodyBodyAccJerkMag-std()      	
+	Body acceleration, jerk component - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
+75.	 fBodyBodyAccJerkMag-meanFreq() 	
+	Body acceleration, jerk component - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
+76.	 fBodyBodyGyroMag-mean()        	
+	Body rotation - magnitude - Mean - Frequency domain - Variable normalized to -1:1
+77.	 fBodyBodyGyroMag-std()         	
+	Body rotation - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
+78.	 fBodyBodyGyroMag-meanFreq()    	
+	Body rotation - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
+79.	 fBodyBodyGyroJerkMag-mean()    	
+	Body rotation, jerk component - magnitude - Mean - Frequency domain - Variable normalized to -1:1
+80.	 fBodyBodyGyroJerkMag-std()     	
+	Body rotation, jerk component - magnitude - Standard deviation - Frequency domain - Variable normalized to -1:1
+81.	 fBodyBodyGyroJerkMag-meanFreq()	
+	Body rotation, jerk component - magnitude - Mean Frequency - Frequency domain - Variable normalized to -1:1
 
