@@ -32,7 +32,6 @@ colnames(activity_labels) <- c("ActivityNb","Activity")
 ## Combine measurement with activities and subjects names
 data_merged_enriched <- cbind(subjects_merged,activity_merged,data_merged_reduced)
 tidy_dataset<- merge(x=activity_labels,y=data_merged_enriched,by = "ActivityNb")
-tidy_dataset <- data.frame(tidy_dataset)
 tidy_dataset$ActivityNb<-NULL
 
 ## Compute the average of each measurement per Activity and Subject
@@ -45,7 +44,4 @@ remove(features_needed,data_merged_reduced,data_merged_enriched,subjects_merged,
 head(tidy_dataset_average)
 str(tidy_dataset_average)
 summary(tidy_dataset_average)
-
-
-label(tidy_dataset)
-
+write.table(tidy_dataset_average,file="TidyDataset_average.txt")

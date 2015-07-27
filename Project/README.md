@@ -17,7 +17,7 @@ The script, called [run_analysis.R](), works in x steps
 1. Import all source datasets (both train and test)
 2. Merge train and test datasets to combine a unique larger set
 3. Select the required features (i.e. specific measurements) related to the mean and standard deviations
-4. Name all measurements and dimensions
+4. Name all measurements with descriptive names, specifying the measure and the aggregation
 5. Add the subject number and position description in the main dataset by merging with the corresponding source data
 6. Summarize the data by taking the average of each measurement for each subject and position
 
