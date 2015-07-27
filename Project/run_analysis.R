@@ -1,5 +1,3 @@
-library(data.table)
-
 ## Import all source datasets
 data_train <- read.table("./UCI HAR Dataset/train/x_train.txt")
 activity_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
@@ -26,7 +24,7 @@ features_needed <- features[grepl("mean()",features[,2])|grepl("std()",features[
 data_merged_reduced <- data_merged[,features_needed[,1]] ##Change here##
 
 ##Name all measures
-colnames(data_merged_reduced) <- as.vector(features_needed[,2])
+colnames(data_merged_reduced) <- as.character(features_needed[,2])
 colnames(subjects_merged) <- "Subjects"
 colnames(activity_merged) <- "ActivityNb"
 colnames(activity_labels) <- c("ActivityNb","Activity")
@@ -49,5 +47,5 @@ str(tidy_dataset_average)
 summary(tidy_dataset_average)
 
 
-
+label(tidy_dataset)
 
