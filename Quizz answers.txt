@@ -1,6 +1,0 @@
-I
-1.53
-2.d
-3.b 36534720 
-4.c 127
-5.e sapply(split(DT$pwgtp15,DT$SEX),mean) 
